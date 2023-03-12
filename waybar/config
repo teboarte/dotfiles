@@ -106,8 +106,8 @@
         "format-alt": "{percent}% {icon}",
         "format-alt-click": "click-right",
         "format-icons": ["", ""],
-        "on-scroll-down": "light -A 1",
-        "on-scroll-up": "light -U 1"
+        "on-scroll-down": "brightnessctl s 15- ",
+        "on-scroll-up": "brightnessctl s +15"
     },
     //"backlight": {
       //  "device": "acpi_video1",
