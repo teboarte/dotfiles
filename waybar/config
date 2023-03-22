@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": ["sway/window"],
-    "modules-right": ["mpd", "idle_inhibitor","pulseaudio","network","custom/storage", "cpu", "memory", "temperature", "backlight", "keyboard-state", "sway/language", "battery", "battery#bat2", "clock", "tray"],
+    "modules-right": ["mpd","pulseaudio","network","custom/storage", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "battery#bat2", "clock", "tray"],
     // Modules configuration
     "sway/workspaces": {
         "disable-scroll": true,
@@ -106,8 +106,8 @@
         "format-alt": "{percent}% {icon}",
         "format-alt-click": "click-right",
         "format-icons": ["", ""],
-        "on-scroll-down": "brightnessctl s 15- ",
-        "on-scroll-up": "brightnessctl s +15"
+        "on-scroll-down": "brightnessctl s 2%-",
+        "on-scroll-up": "brightnessctl s +2%"
     },
     //"backlight": {
       //  "device": "acpi_video1",
@@ -133,9 +133,10 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
+       // "format-wifi": "{essid} ({signalStrength}%) ",//
+        "format-wifi": "({signalStrength}%) ",
         "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
+        "tooltip-format": "{essid} {ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
