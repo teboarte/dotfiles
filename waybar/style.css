@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: iosevka_nerd_font;
+    font-family: iosevka_nerd_font, otf-font-awesome;
     font-size: 13px;
 }
 
