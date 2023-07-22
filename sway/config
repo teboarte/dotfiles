@@ -16,6 +16,7 @@ set $right l
 # Your preferred terminal emulator
 set $term alacritty
 set $screensaver swaylock
+set $browser chromium
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -77,9 +78,12 @@ bindsym $mod+Alt+s exec grim -g "$(slurp)"
 
     # Start your launcher
     bindsym $mod+d exec $menu
-    
+
     # Start screensaver
     bindsym $mod+z exec $screensaver
+
+    # Start Browser
+    bindsym $mod+Shift+b exec $browser
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.

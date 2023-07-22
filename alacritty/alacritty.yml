@@ -25,7 +25,7 @@ import:
 colors:
   # Default colors
   primary:
-    background: '0x282a36'
+    background: '0x000000'
     foreground: '0xf8f8f2'
 
   # Normal colors
