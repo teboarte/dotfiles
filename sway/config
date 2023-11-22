@@ -29,7 +29,16 @@ input * {
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Bilder/cat_leaves.png fill
+output eDP-1 {
+    pos 0 0
+    resolution 1920x1080
+}
+
+output * {
+    adaptive_sync off
+}
+
+output * bg /home/tebo/.config/sway/archpc_gruvbox.png fill
 #
 # screenshot
 bindsym $mod+Alt+s exec grim -g "$(slurp)"
@@ -43,10 +52,9 @@ bindsym $mod+Alt+s exec grim -g "$(slurp)"
 #
 # Example configuration:
 #
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'swaylock -f -c 000000'
+exec swayidle timeout 300 'brightnessctl -s && brightnessctl set 5% ; swaylock -i /home/tebo/.config/sway/archpc_gruvbox.png' \
+          timeout 120 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+          before-sleep 'swaylock -f -c 000000'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -90,7 +98,7 @@ bindsym $mod+Alt+s exec grim -g "$(slurp)"
     bindsym $mod+d exec $menu
 
     # Start screensaver
-    bindsym $mod+z exec $screensaver
+    bindsym $mod+z exec $screensaver -i /home/tebo/.config/sway/archpc_gruvbox.png
 
     # Start Browser
     bindsym $mod+Shift+b exec $browser
