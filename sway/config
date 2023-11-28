@@ -52,8 +52,8 @@ bindsym $mod+Alt+s exec grim -g "$(slurp)"
 #
 # Example configuration:
 #
-exec swayidle timeout 300 'brightnessctl -s && brightnessctl set 5% ; swaylock -i /home/tebo/.config/sway/archpc_gruvbox.png' \
-          timeout 120 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+exec swayidle timeout 600 'brightnessctl -s && brightnessctl set 5% ; swaylock -i /home/tebo/.config/sway/archpc_gruvbox.png' \
+          timeout 900 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
           before-sleep 'swaylock -f -c 000000'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off

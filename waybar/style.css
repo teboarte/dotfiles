@@ -32,7 +32,7 @@ window#waybar.termite {
 window#waybar.chromium {
     background-color: #000000;
     border: none;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 button {
@@ -110,7 +110,7 @@ button:hover {
 
 #clock {
     background-color: #F5F5DC;
-    border-radius: 4px;
+    border-radius: 0px;
     border-bottom: 3px solid #ffffff;
     opacity: 1.2;
     color: #2a5c45;
@@ -121,14 +121,14 @@ button:hover {
 #battery {
     background-color: #F5F5DC;
     color: #2a5c45;
-    border-radius: 4px;
+    border-radius: 0px;
     border-bottom: 3px solid #ffffff;
 }
 
 #battery.charging, #battery.plugged {
     color: #ffffff;
     background-color: #26A65B;
-    border-radius: 4px;
+    border-radius: 0px;
     border-bottom: 3px solid #ffffff;
 }
 
@@ -157,47 +157,48 @@ label:focus {
 #cpu {
     background-color: #F5F5DC;
     color: #2a5c45;
-    border-radius: 4px;
+    border-radius: 0px;
     border-bottom: 3px solid #ffffff;
 }
 
 #memory {
     background-color: #F5F5DC;
-    border-radius: 4px;
+    border-radius: 0px;
     color: #2a5c45;
     border-bottom: 3px solid #ffffff;
 }
 
 #disk {
     background-color: #F5F5DC;
-    border-radius: 4px;
-    border-bottom: 3px solid #ffffff;
+    border-radius: 0px;
+    border-bottom: 0px solid #ffffff;
 }
 
 #backlight {
     background-color: #F5F5DC;
-    border-radius: 4px;
+    border-radius: 0px;
     color: #2a5c45;
-    border-bottom: 3px solid #ffffff;
+    border-bottom: 0px solid #ffffff;
 }
 /* ========= NETWORK ========= */
 #network {
     background-color: #F5F5DC;
-    border-radius: 4px;
+    border-radius: 0px;
     color: #2a5c45;
     border-bottom: 3px solid #ffffff;
 }
 
 #network.disconnected {
     background-color: #F5F5DC;
-    border-radius: 4px;
+    border-radius: 0px;
     color: #2a5c45;
 }
 /* ========= AUDIO ========= */
 #pulseaudio {
     background-color: #F5F5DC;
     color: #2a5c45;
-    border-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
     border-bottom: 3px solid #ffffff;
     border-bottom: 3px solid #ffffff;
 }
@@ -211,7 +212,7 @@ label:focus {
 #wireplumber {
     background-color: #fff0f5;
     color: #000000;
-    border-radius: 4px;
+    border-radius: 0px;
     border-bottom: 3px solid #ffffff;
 }
 
@@ -225,9 +226,8 @@ label:focus {
     background-color: #F5F5DC;
     color: #2a5c45;
     min-width: 50px;
-    border-radius: 4px;
+    border-radius: 0px;
     border-bottom: 3px solid #ffffff;
-    border-radius: 4px;
 }
 #custom-media {
     background-color: #F5F5DC;
@@ -245,7 +245,7 @@ label:focus {
 
 #temperature {
     background-color: #F5F5DC;
-    border-radius: 4px;
+    border-radius: 0px;
     color: #2a5c45;
     border-bottom: 3px solid #ffffff;
 }
@@ -300,7 +300,7 @@ label:focus {
     /*padding: 0 5px;*/
     /*margin: 0 5px;*/
     min-width: 10px;
-    border-radius: 4px;
+    border-radius: 0px;
     border-bottom: 3px solid #ffffff;
 }
 
